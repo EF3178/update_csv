@@ -118,10 +118,13 @@ fs.readdirSync(directory)
 
         // Write report to file
         reportContent += `********************* File n°${index + 1} *************************\n`;
-        reportContent += `File: ${file}\n`;
-        reportContent += `Rows Added: ${rowsAdded}\n`;
-        reportContent += `Rows Updated: ${rowsUpdated}\n`;
-        reportContent += `Time taken: ${timeTaken.toFixed(3)} seconds\n`;
+        reportContent += `- File: ${file}\n`;
+        reportContent += `- Rows Added: ${rowsAdded}\n`;
+        reportContent += `- Rows Updated: ${rowsUpdated}\n`;
+        reportContent += `- Time taken: ${timeTaken.toFixed(3)} seconds\n`;
+        reportContent += `- New total number of rows in database: ${
+            existingData.length
+          }\n`;
         reportContent += `At: ${date}\n\n`;
         fs.writeFileSync(reportFile, reportContent);
     });

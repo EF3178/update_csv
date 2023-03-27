@@ -1,0 +1,22 @@
+{
+  "name": "update_csv_database",
+  "version": "1.0.0",
+  "description": "A utility to update a csv database in windows environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EF3178/update_csv.git"
+  },
+  "keywords": [
+    "csv"
+  ],
+  "author": "Elian Faggion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EF3178/update_csv/issues"
+  },
+  "homepage": "https://github.com/EF3178/update_csv#readme"
+}
